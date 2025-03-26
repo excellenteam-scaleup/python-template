@@ -15,6 +15,27 @@ This is a template repository for the Tel Hai Excellenteam (THE) Python course.
 
 All exercises and submissions should follow the format of this repository. For your convenience, you can start each assignment by cloning this template.
 
+## Environment Setup and Pycharm Installation
+During the course we will utilize Linux based operating system (OS), to run and execute programs.
+
+### Windows Installation
+1. Install [WSL 2](https://learn.microsoft.com/en-us/windows/wsl/install
+) , with Ubuntu distribution.
+2. [Install Pycharm](https://www.jetbrains.com/help/pycharm/installation-guide.html) inside the VM
+
+### Mac Installation
+1. Follow the instruction presented in the following [video]( https://www.youtube.com/watch?v=LjL_N0OZxvY
+), install Ubuntu (no GUI) version
+2. To install GUI, use following [guide](https://askubuntu.com/questions/53822/how-do-you-run-ubuntu-server-with-a-gui
+)
+3. In case you forgot the default credentials, read following [article](https://www.debugpoint.com/virtualbox-id-password/
+).
+4. [Install Pycharm](https://www.jetbrains.com/help/pycharm/installation-guide.html) inside the VM
+
+### Linux Installation
+Congragulations, you made the right decision.
+1. [Install Pycharm](https://www.jetbrains.com/help/pycharm/installation-guide.html)
+
 ## Grading and Conventions
 Your assignment will be graded according to the following criteria. Please make sure your assignment follows the standards and conventions outlined below:
 
@@ -115,8 +136,9 @@ You are required to submit each exercise using "GitHub Classroom". To do this, y
 4. Ensure that your code is running.
 5. Once you open a PR, review the changes **carefully**. You can leverage GitHub's built-in diff viewer.
 6. Wait and confirm that the linter test completed successfully. If the linter test fails, assess the errors and refactor accordingly — otherwise, each error will negatively impact your grade.
-7. Upload the repository link to Moodle.
-8. Good luck :)
+7. Read the Dont's, Read the Dont's, Read the Dont's.
+8. Upload the repository link to Moodle.
+9. Good luck :)
 
 <!-- Center Excellenteam image -->
 <p align="center">
