@@ -18,10 +18,15 @@ All exercises and submissions should follow the format of this repository. For y
 ## Grading and Conventions
 Your assignment will be graded according to the following criteria. Please make sure your assignment follows the standards and conventions outlined below:
 
+### Python Conventions and Best Practices
+In this course you will be required to follow industry standard conventions [Python PEP8 Conventions](https://peps.python.org/pep-0008/). Make sure that once in a while you take a look at the conventions. We have installed a [GitHub Action](https://docs.github.com/en/actions/writing-workflows/quickstart) (extra curriculum) workflow to help you ensure and validate that you follow the conventions as expected, each time a new pull request is created or updated. Additionally you are highly encouraged to use your IDE's ([Pycharm](https://www.jetbrains.com/pycharm/)) built-in linter ;)
+
+For best practices please use examples presented in [PRACTICES.md](PRACTICES.md), if still there is an uncertainty or missing use cases, you are highly encouraged to contact the staff for further clarifications.
+
 ### Branching
 Use the [CONTRIBUTING.md](CONTRIBUTING.md) file as your guideline for proper use of Git. For more information, you are encouraged to search online for "[GitHub Workflow Methodology](https://www.youtube.com/watch?v=U_IFGpJDbeU&ab_channel=DevOpsToolkit)."
 
-### Environment
+### Python Environment
 1. Use Python 3.10 as the interpreter.
 2. At submission, ensure that the `requirements.txt` file is updated and contains all required packages for the application to run.
 
@@ -31,7 +36,7 @@ Please follow the guidelines in this section strictly.
 <table>
 <tr style="border: none">
 <td style="border: none"><img src="./img/snakey_python.png" alt="Python Logo" width="70" height="70"></td>
-<td style="border: none"><h4>Python Environment</h4></td>
+<td style="border: none"><h4>Python Environment Structure</h4></td>
 </tr>
 </table>
 
