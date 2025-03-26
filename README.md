@@ -28,8 +28,6 @@ Use the [CONTRIBUTING.md](CONTRIBUTING.md) file as your guideline for proper use
 ### Repository Structure
 Please follow the guidelines in this section strictly.
 
-#### 
-
 <table>
 <tr style="border: none">
 <td style="border: none"><img src="./img/snakey_python.png" alt="Python Logo" width="70" height="70"></td>
@@ -46,6 +44,7 @@ Please follow the guidelines in this section strictly.
 * The repository should include a `CONTRIBUTING.md` file at the root directory.
 * You must have a `.gitignore` file, and there shouldn’t be any unnecessary files in the repository.
 * 🚨 **CRITICAL:** Repositories without a workflow file at `.github/workflows/pylint.yml` will not be graded. :(
+* You must have an `img` directory at the root directory.
 
 #### Project's Files
 * The repository should include a `main.py` file (this should be the entry point of the repository) at the root.
@@ -53,6 +52,44 @@ Please follow the guidelines in this section strictly.
   * All source files should be placed in the `src` directory.
 * The repository should include a `test` directory at the root.
   * All tests should be placed in the `test` directory.
+
+#### Project Tree
+Project tree should match the following structure:
+
+```bash
+.
+├── CONTRIBUTING.md
+├── .git
+│   ├── ...
+├── .github
+│   └── workflows
+│       └── pylint.yml
+├── .gitignore
+├── img
+│   ├── excellenteam.png
+│   ├── scaleup.png
+│   └── snakey_python.png
+├── main.py
+├── README.md
+├── requirements.txt
+├── src
+│   ├── example.py
+│   ├── ...
+│   ├── ...
+│   └── __pycache__
+├── tests
+│   ├── __pycache__
+│   ├── ...
+│   ├── ...
+│   └── test_example.py
+└── venv
+    ├── bin
+    ├── .gitignore
+    ├── lib
+    └── pyvenv.cfg
+```
+* `venv` directory should exist only on your local machine but not in the remote directory
+* `...` notation stands for several files (might change from project to project, example files are just placeholders for examples)
 
 ## Don’ts
 Please read this section carefully as there will not be any leniency when it comes to grading and undesired behavior.
