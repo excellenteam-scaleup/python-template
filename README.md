@@ -117,15 +117,6 @@ Project tree should match the following structure:
 * `venv` directory should exist only on your local machine but not in the remote directory
 * `...` notation stands for several files (might change from project to project, example files are just placeholders for examples)
 
-## Don’ts
-Please read this section carefully as there will not be any leniency when it comes to grading and undesired behavior.
-1. You are not allowed to use GitHub Copilot, Cursor, or any other IDE-embedded LLM. All code that you submit must be written manually by you.
-2. You are strongly discouraged (this means you should completely avoid) using ChatGPT or any other LLM to search for information, unless Google or other traditional search engines fail to provide what you need.
-3. Do not copy under any circumstances. Students caught doing so will receive a `0` grade on all assignments (current, future, and past), regardless of previous grades.
-4. The same applies to LLM usage mentioned in bullets `1` and `2`.
-5. Submitting an empty assignment or leaving questions unanswered will result in a `20%` grade — simply for showing that you have a heartbeat and at least minimal care for the course and academic honesty.
-6. The course staff reserves the right to conduct pop quizzes in case of suspicion of LLM misuse, plagiarism, or any other invalid behavior.
-
 ## How to Submit an Exercise
 You are required to submit each exercise using "GitHub Classroom". To do this, you must upload a link to your "GitHub Classroom" repository via Moodle.
 
@@ -136,9 +127,8 @@ You are required to submit each exercise using "GitHub Classroom". To do this, y
 4. Ensure that your code is running.
 5. Once you open a PR, review the changes **carefully**. You can leverage GitHub's built-in diff viewer.
 6. Wait and confirm that the linter test completed successfully. If the linter test fails, assess the errors and refactor accordingly — otherwise, each error will negatively impact your grade.
-7. Read the Dont's, Read the Dont's, Read the Dont's.
-8. Upload the repository link to Moodle.
-9. Good luck :)
+7. Upload the repository link to Moodle.
+8. Good luck :)
 
 <!-- Center Excellenteam image -->
 <p align="center">
