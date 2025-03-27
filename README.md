@@ -21,7 +21,7 @@ During the course we will utilize Linux based operating system (OS), to run and 
 ### Windows Installation
 1. Install [WSL 2](https://learn.microsoft.com/en-us/windows/wsl/install
 ) , with Ubuntu distribution.
-2. [Install Pycharm](https://www.jetbrains.com/help/pycharm/installation-guide.html) inside the VM
+2. [Install Pycharm](https://www.jetbrains.com/help/pycharm/installation-guide.html) on wsl
 
 ### Mac Installation
 1. Follow the instruction presented in the following [video]( https://www.youtube.com/watch?v=LjL_N0OZxvY
