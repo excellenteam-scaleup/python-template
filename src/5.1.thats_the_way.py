@@ -13,4 +13,4 @@ def thats_the_way(folder):
 
 
 if __name__ == "__main__":
-    print(thats_the_way("img"))
+    print(thats_the_way("images"))
