@@ -32,7 +32,9 @@ def main() -> None:
     duration_zip = running_2000(zip, [1, 2, 3], [4, 5, 6])
     print(f"zip execution time: {duration_zip:.6f} seconds")
 
-    duration_format = running_2000("Hi {name}".format, name="Bug")
+    duration_format = running_2000(
+        "Hi {name}".format, name="Bug"  # pylint: disable=consider-using-f-string
+    )
     print(f"format execution time: {duration_format:.6f} seconds")
 
 
