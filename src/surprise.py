@@ -15,7 +15,7 @@ def surprise(func: Callable[..., Any]) -> Callable[..., None]:
     :return: A wrapper function that prints the surprise message.
     """
     @functools.wraps(func)
-    def wrapper(*args: Any, **kwargs: Any) -> None:
+    def wrapper(*_args: Any, **_kwargs: Any) -> None:
         print(SURPRISE_MESSAGE)
 
     return wrapper
