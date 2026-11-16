@@ -12,8 +12,7 @@ def generator_interleaves(*iterables: Iterable[Any]) -> Iterator[Any]:
     :return: Generator yielding interleaved elements.
     """
     for group in zip(*iterables):
-        for item in group:
-            yield item
+        yield from group
 
 
 def interleaves(*iterables: Iterable[Any]) -> list[Any]:
