@@ -112,8 +112,7 @@ class PostOffice:
 
 
 # Aliases to support variations in exercise naming
-sent_turtle = PostOffice
-turtle_sent = PostOffice
+sent_turtle = PostOffice  # pylint: disable=invalid-name
 
 
 def main() -> None:
@@ -121,7 +120,9 @@ def main() -> None:
     office = PostOffice(["Alice", "Bob"])
 
     office.send_message("Alice", "Bob", "Hello Bob!", title="Greeting")
-    office.send_message("Alice", "Bob", "Project deadline tomorrow", title="Urgent Task", urgent=True)
+    office.send_message(
+        "Alice", "Bob", "Project deadline tomorrow", title="Urgent Task", urgent=True
+    )
 
     print("--- Searching Bob's inbox for 'Task' ---")
     search_results = office.search_inbox("Bob", "Task")
