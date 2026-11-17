@@ -131,6 +131,7 @@ celerybeat.pid
 .env
 .venv
 env/
+/images/
 venv/
 .venv-1/
 ENV/
