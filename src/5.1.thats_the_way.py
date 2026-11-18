@@ -3,7 +3,7 @@
 from glob import glob
 
 SEARCH_DEEP = "deep*"
-
+IMG_DIR = "../../webDevClass/img"
 
 def thats_the_way(path_name: str):
     """Return the names of files in a directory that start with "deep".
@@ -15,4 +15,4 @@ def thats_the_way(path_name: str):
 
 
 if __name__ == "__main__":
-    print(thats_the_way("../../webDevClass/img"))
+    print(thats_the_way(IMG_DIR))
