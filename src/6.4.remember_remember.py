@@ -3,6 +3,7 @@
 from PIL import Image
 
 WHITE = (255, 255, 255)
+CODE_IMAGE_PATH = "../img/code.png"
 
 
 def remember_remember(path):
@@ -12,9 +13,13 @@ def remember_remember(path):
     ASCII value of the next character in the message.
 
     :param path: Path of the image file
-    :return: The decoded message
+    :return: The decoded message, or None if the file was not found
     """
-    img = Image.open(path).convert("RGB")
+    try:
+        img = Image.open(path).convert("RGB")
+    except FileNotFoundError:
+        print(f"Error: {path} not found")
+        return None
     width, height = img.size
     message = ""
 
@@ -28,4 +33,4 @@ def remember_remember(path):
 
 
 if __name__ == "__main__":
-    print(remember_remember("../img/code.png"))
+    print(remember_remember(CODE_IMAGE_PATH))

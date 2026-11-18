@@ -1,8 +1,18 @@
+"""Join several lists into one list with a separator between them."""
+
+
 def cup_of_join(*lists, sep: str = '-'):
+    """Join any number of lists into a single list, separated by sep.
+
+    :param lists: The lists to join
+    :param sep: Separator inserted between the lists (default '-')
+    :return: The joined list, or None if no lists were given
+    :raises TypeError: If one of the arguments is not a list
+    """
     if len(lists) == 0:
         return None
 
-    if any(not isinstance((unexpected := i), list) for i in lists):
+    if any(not isinstance((unexpected := arg), list) for arg in lists):
         raise TypeError(f'expected a list, got: {type(unexpected)}')
 
     res = []

@@ -12,6 +12,7 @@ def piece_of_cake(prices, optionals: list = None, **ingredients):
     :param optionals: List of ingredient names that should not be charged
     :param ingredients: Ingredient names mapped to their amount in grams
     :return: The total price of the cake
+    :raises ValueError: If a charged ingredient has no price
     """
     if not optionals:
         optionals = []
@@ -20,6 +21,8 @@ def piece_of_cake(prices, optionals: list = None, **ingredients):
     for ingredient, count in ingredients.items():
         if ingredient in optionals:
             continue
+        if ingredient not in prices:
+            raise ValueError(f"No price for ingredient: {ingredient}")
         price += prices[ingredient] * (count * PRICE_RATIO)
 
     return price

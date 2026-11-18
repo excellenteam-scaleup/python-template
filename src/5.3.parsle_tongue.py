@@ -32,8 +32,11 @@ def find_msg(file_name):
 
 def parsle_tongue():
     """Print every hidden message found in the logo image."""
-    for msg in find_msg(IMAGE_PATH):
-        print(msg)
+    try:
+        for msg in find_msg(IMAGE_PATH):
+            print(msg)
+    except FileNotFoundError:
+        print(f"Error: {IMAGE_PATH} not found")
 
 
 if __name__ == '__main__':
