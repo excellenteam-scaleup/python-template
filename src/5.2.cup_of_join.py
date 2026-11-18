@@ -6,8 +6,9 @@ def cup_of_join(*lists, sep: str = '-'):
         raise TypeError(f'expected a list, got: {type(unexpected)}')
 
     res = []
-    for list_i in lists:
-        res += [sep] + list_i
+    for current_list in lists:
+        res += [sep] + current_list
+    res.pop(0)
     return res
 
 
