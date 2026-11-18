@@ -1,16 +1,25 @@
+"""Interleave the items of several iterables."""
+
+
 def generator_interleaves(*iterators):
+    """Interleave items from several iterables, one item from each in turn.
+
+    :param iterators: The iterables to interleave
+    :return: List of the interleaved items
+    """
     iterators_list = []
     for iterator in iterators:
         iterators_list.append(iter(iterator))
 
     result = []
-    active_iterators = len(iterators_list)
-    while active_iterators > 0:
-        for iterator in iterators_list:
+
+    while iterators_list:
+        # Iterate over a copy so removing exhausted iterators is safe
+        for iterator in iterators_list[:]:
             try:
                 result.append(next(iterator))
             except StopIteration:
-                active_iterators -= 1
+                iterators_list.remove(iterator)
 
     return result
 
