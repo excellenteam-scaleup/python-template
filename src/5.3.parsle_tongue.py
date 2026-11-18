@@ -27,5 +27,6 @@ def parsle_tongue():
     for msg in find_msg(IMAGE_DIR):
         print(msg)
 
+
 if __name__ == '__main__':
     parsle_tongue()

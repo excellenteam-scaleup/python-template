@@ -14,5 +14,6 @@ def generator_interleaves(*iterators):
 
     return result
 
+
 if __name__ == '__main__':
-    print(generator_interleaves([1,2,3],[1,2],['1', '2', '3', '4']))
+    print(generator_interleaves([1, 2, 3], [1, 2], ['1', '2', '3', '4']))

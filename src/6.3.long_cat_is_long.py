@@ -6,12 +6,14 @@ TEST_TEXT = """
     The only difference is that there is no cat.
 """
 
+
 def long_cat_is_long(text):
     clean_text = ''.join(char if char.isalpha() else ' ' for char in text)
 
     words = clean_text.split()
 
     return {word: len(word) for word in words}
+
 
 if __name__ == '__main__':
     print(long_cat_is_long("Hello-World"))

@@ -1,5 +1,6 @@
 from PIL import Image
 
+
 def remember_remember(path):
     img = Image.open(path).convert("RGB")
     width, height = img.size
