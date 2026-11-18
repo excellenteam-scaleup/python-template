@@ -1,15 +1,15 @@
 """Interleave the items of several iterables."""
 
 
-def generator_interleaves(*iterators):
+def generator_interleaves(*data_containers):
     """Interleave items from several iterables, one item from each in turn.
 
     :param iterators: The iterables to interleave
     :return: List of the interleaved items
     """
     iterators_list = []
-    for iterator in iterators:
-        iterators_list.append(iter(iterator))
+    for item in data_containers:
+        iterators_list.append(iter(item))
 
     result = []
 

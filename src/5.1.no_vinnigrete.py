@@ -8,15 +8,15 @@ DATE_FORMAT = "%Y-%m-%d"
 MONDAY_MSG = "אין לי ויניגרט!"
 
 
-def random_date_between_dates(date_a: str, date_b: str):
+def random_date_between_dates(date_a_text: str, date_b_text: str):
     """Return a random date between two dates (inclusive).
 
-    :param date_a: Start date in YYYY-MM-DD format
-    :param date_b: End date in YYYY-MM-DD format
+    :param date_a_text: Start date in YYYY-MM-DD format
+    :param date_b_text: End date in YYYY-MM-DD format
     :return: A random datetime between date_a and date_b
     """
-    date_a = dt.datetime.strptime(date_a, DATE_FORMAT)
-    date_b = dt.datetime.strptime(date_b, DATE_FORMAT)
+    date_a = dt.datetime.strptime(date_a_text, DATE_FORMAT)
+    date_b = dt.datetime.strptime(date_b_text, DATE_FORMAT)
 
     days = (date_b - date_a).days
 

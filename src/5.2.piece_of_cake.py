@@ -16,16 +16,16 @@ def piece_of_cake(prices, optionals: list = None, **ingredients):
     """
     if not optionals:
         optionals = []
-    price = 0
+    cake_price = 0
 
     for ingredient, count in ingredients.items():
         if ingredient in optionals:
             continue
         if ingredient not in prices:
             raise ValueError(f"No price for ingredient: {ingredient}")
-        price += prices[ingredient] * (count * PRICE_RATIO)
+        cake_price += prices[ingredient] * (count * PRICE_RATIO)
 
-    return price
+    return cake_price
 
 
 if __name__ == '__main__':

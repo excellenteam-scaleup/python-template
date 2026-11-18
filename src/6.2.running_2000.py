@@ -17,5 +17,5 @@ def running_2000(func, *args, **kwargs):
 
 
 if __name__ == '__main__':
-    for j in range(10):
-        print(running_2000(lambda x: [i ** 12 for i in range(x)], 10 ** j))
+    for j in range(9):
+        print(running_2000(lambda x: [i ** 5 for i in range(x)], 10 ** j))
