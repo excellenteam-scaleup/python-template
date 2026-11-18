@@ -1,7 +1,7 @@
 def group_by(key_func, items):
     key_dict = {}
     for item in items:
-        if (key := key_func(item)) not in key_dict.keys():
+        if (key := key_func(item)) not in key_dict:
             key_dict[key] = [item]
         else:
             key_dict[key].append(item)

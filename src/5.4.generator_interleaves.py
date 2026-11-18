@@ -4,13 +4,13 @@ def generator_interleaves(*iterators):
         iterators_list.append(iter(iterator))
 
     result = []
-
-    while iterators_list:
+    active_iterators = len(iterators_list)
+    while active_iterators > 0:
         for iterator in iterators_list:
             try:
                 result.append(next(iterator))
             except StopIteration:
-                iterators_list.remove(iterator)
+                active_iterators -= 1
 
     return result
 
