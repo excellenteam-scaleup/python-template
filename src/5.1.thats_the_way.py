@@ -1,3 +1,5 @@
+"""Exercise 5.1: Find files whose names start with 'deep'."""
+
 import os
 
 
